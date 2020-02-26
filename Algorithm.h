@@ -9,6 +9,8 @@ public:
     bool print_matrix(int *arr, int row, int col);
     bool multplication_matrix_blok(int *input_array1 , int *input_array2 , int row , int col);
     bool quicksort(int* inputarray , int start , int end);
+    
+    //from git hub text 
 
 private:
     int parttion(int *inputdata ,int start, int end );
