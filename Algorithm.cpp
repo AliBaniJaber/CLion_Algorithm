@@ -47,14 +47,12 @@ bool Algorithm::insertion_sort_inc(int* inputarray , int length)
     return true;
     // write by Ali Bani-Jaber
 }
-
 Algorithm::Algorithm()
 {
     cout << endl << "---------- hello Course Algorithm ----------" << endl << endl << endl;;
     // write by Ali Bani-Jaber
 
 }
-
 bool Algorithm::insertion_sort_dec(int* inputarray, int length)
 {
     // ----------information about function -----------------
@@ -98,7 +96,6 @@ bool Algorithm::insertion_sort_dec(int* inputarray, int length)
     // write by Ali Bani-Jaber
 
 }
-
 bool Algorithm::print_array(int* inputarray, int length)
 {
     /*
@@ -166,12 +163,6 @@ bool Algorithm::print_matrix(int *arr, int row, int col) {
 
     }
 }
-//    int i, j;
-//    for (i = 0; i < m; i++)
-//        for (j = 0; j < n; j++)
-//            cout<< *((arr+i*n) + j);
-//
-//            return true ;
 bool Algorithm::multplication_matrix_blok(int *input_array1, int *input_array2, int row, int col)
 {
     /**
@@ -206,28 +197,89 @@ bool Algorithm::multplication_matrix_blok(int *input_array1, int *input_array2, 
     return true;
 
 }
+int count=0;
 
-int Algorithm::parttion(int *inputdata, int start, int end)
+void Algorithm::merge_sort(int *inputarray, int start, int end)
 {
-    /// array  inputdata[start , . . . , end ]//
-    int x=inputdata[start];
-    for(int j=0 ; j<start+1 ; j++)
+
+    if(start < end)
     {
-        if(inputdata[j]<=x)
+        int split_point=start+(end-start)/2;
+        merge_sort(inputarray,start,split_point);
+        //print_array(inputarray,20);
+        merge_sort(inputarray,split_point+1,end);
+        cout<<"count"<<count++<<endl;
+
+        merge(inputarray,start,split_point,end);
 
     }
+
+}
+
+
+void Algorithm::merge(int *inputarray, int start, int split_point, int end)
+{
+    int size_first_array=split_point-start+1;
+    int size_secand_array=end-split_point;
+
+    int first_array[size_first_array];//10 //0-9
+    int secand_array[size_secand_array];//10 10..19
+
+    for(int i=0;i<size_first_array;i++)
+    {
+        first_array[i]=inputarray[start+i];
+    }
+    for(int j=0;j<size_secand_array;j++)
+    {
+        secand_array[j]=inputarray[split_point+1+j];
+    }
+
+    int i=0,j=0,k=1;
+    while (i < size_first_array && j < size_secand_array)
+    {
+        if(first_array[i]<=secand_array[j])
+        {
+            inputarray[k]=first_array[i];
+            i++;
+
+        }
+        else
+        {
+            inputarray[k]=secand_array[j];
+            j++;
+        }
+        k++;
+
+
+    }
+    while (i<size_first_array)
+    {
+        inputarray[k]=first_array[i];
+        i++;
+        k++;
+    }
+    while (j<size_secand_array)
+    {
+        inputarray[k]=secand_array[j];
+        j++;
+        k++;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
 
 
-bool Algorithm::quicksort(int *inputarray, int start, int end) {
-    int index_pivot;
-    if (start < end )
-        index_pivot=parttion( inputarray , start ,index_pivot-1);
-        index_pivot=parttion( inputarray , index_pivot+1 ,end);
-
-}
 
 
 
