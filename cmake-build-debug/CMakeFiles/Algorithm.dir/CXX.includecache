@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.h
+
+C:/Users/Ali_Msi/CLionProjects/Algorithm/main.cpp
+iostream
+-
+Algorithm.h
+C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.h
+stdio.h
+-
+
