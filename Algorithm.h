@@ -10,6 +10,8 @@ public:
     bool multplication_matrix_blok(int *input_array1 , int *input_array2 , int row , int col);
     bool quicksort(int* inputarray , int start , int end);
     void merge_sort(int* inputarray ,int start , int end );
+    
+    ///from git hub 
 
 
 
