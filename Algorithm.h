@@ -17,7 +17,7 @@ public:
 
 private:
     int parttion(int *inputdata ,int start, int end );
-
+     void swap(int*A , int*B);
 
     void merge(int *inputarray, int start, int split_point, int end);
 };
