@@ -198,25 +198,47 @@ bool Algorithm::multplication_matrix_blok(int *input_array1, int *input_array2, 
 
 }
 int count=0;
-
-void Algorithm::merge_sort(int *inputarray, int start, int end)
+void Algorithm::quicksort(int *inputarray, int start, int end)
 {
-
     if(start < end)
     {
-        int split_point=start+(end-start)/2;
-        merge_sort(inputarray,start,split_point);
-        //print_array(inputarray,20);
-        merge_sort(inputarray,split_point+1,end);
-        cout<<"count"<<count++<<endl;
-
-        merge(inputarray,start,split_point,end);
+        int index_pivot=parttion(inputarray,start,end);
+        quicksort(inputarray,start,index_pivot-1);
+        quicksort(inputarray,index_pivot+1,end);
 
     }
 
 }
+void Algorithm::merge_sort(int *inputdata, int start, int end)
+{
+//    int split_point=start+(end-start)/2;
+//
+//    if(start < end)
+//    {
+//        merge_sort(inputarray,start,split_point);
+//        //print_array(inputarray,20);
+//        merge_sort(inputarray,split_point+1,end);
+//        //cout<<"count"<<count++<<endl;
+//
+//        merge(inputarray,start,split_point,end);
+//
+//    }
+
+    if (start < end)
+    {
+        // Same as (l+r)/2, but avoids overflow for
+        // large l and h
+        int split_point = start+(end-start)/2;
+
+        // Sort first and second halves
+        merge_sort(inputdata, start, split_point);
+        merge_sort(inputdata, split_point+1, end);
+
+        merge(inputdata, start, split_point, end);
+    }
 
 
+}
 void Algorithm::merge(int *inputarray, int start, int split_point, int end)
 {
     int size_first_array=split_point-start+1;
@@ -228,13 +250,15 @@ void Algorithm::merge(int *inputarray, int start, int split_point, int end)
     for(int i=0;i<size_first_array;i++)
     {
         first_array[i]=inputarray[start+i];
+      // cout<<first_array[i]<<"   ";
+
     }
     for(int j=0;j<size_secand_array;j++)
     {
         secand_array[j]=inputarray[split_point+1+j];
     }
 
-    int i=0,j=0,k=1;
+    int i=0,j=0,k=start;
     while (i < size_first_array && j < size_secand_array)
     {
         if(first_array[i]<=secand_array[j])
@@ -265,6 +289,53 @@ void Algorithm::merge(int *inputarray, int start, int split_point, int end)
         k++;
     }
 
+//    int i, j, k;
+//    int size_first_array = split_point - start + 1;
+//    int size_secound_array =  end - split_point;
+//
+//    int first_array[size_first_array], secound_array[size_secound_array];
+//
+//    for (i = 0; i < size_first_array; i++)
+//        first_array[i] = inputdata[start+ i];
+//    for (j = 0; j < size_secound_array; j++)
+//        secound_array[j] = inputdata[split_point + 1+ j];
+//
+//    i = 0; // Initial index of first subarray
+//    j = 0; // Initial index of second subarray
+//    k = l; // Initial index of merged subarray
+//    while (i < size_first_array && j < size_secound_array)
+//    {
+//        if (first_array[i] <= secound_array[j])
+//        {
+//            inputdata[k] = first_array[i];
+//            i++;
+//        }
+//        else
+//        {
+//            inputdata[k] = secound_array[j];
+//            j++;
+//        }
+//        k++;
+//    }
+//
+//    /* Copy the remaining elements of L[], if there
+//       are any */
+//    while (i < size_first_array)
+//    {
+//        inputdata[k] = first_array[i];
+//        i++;
+//        k++;
+//    }
+//
+//    /* Copy the remaining elements of R[], if there
+//       are any */
+//    while (j < size_secound_array)
+//    {
+//        inputdata[k] = secound_array[j];
+//        j++;
+//        k++;
+//    }
+//
 
 
 
@@ -276,10 +347,62 @@ void Algorithm::merge(int *inputarray, int start, int split_point, int end)
 
 
 }
+int Algorithm::binary_search(int *inputarray, int start,int end, int item)
+{
+    int split_point=(end-start)/2;
+    insertion_sort_inc(inputarray ,end-start);
+
+    if(end-start==0)
+        return -1;
+
+    else if(inputarray[split_point]==item)
+         return split_point;
+    else  if(item>inputarray[split_point])
+    {
+        binary_search(inputarray , split_point,end,item);
+
+    }
+    else  if(item<inputarray[split_point])
+    {
+        binary_search(inputarray , start,split_point,item);
+    }
+    return -1;
 
 
 
 
+
+
+
+}
+int Algorithm::parttion(int *inputdata, int start, int end)
+{
+    int key=inputdata[start];
+//    int length=end-start;
+
+    int i=start,j=start+1;
+    for( ;j<=end ;j++ ) {
+        if (key >= inputdata[j])
+        {
+            i++;
+        swap(&inputdata[i], &inputdata[j]);
+       }
+    }
+
+
+
+    swap(&inputdata[start],&inputdata[i]);
+    return i;
+
+
+}
+void Algorithm::swap(int *A, int *B)
+{
+    int tmp =*A;
+    *A=*B;
+    *B=tmp;
+
+}
 
 
 
