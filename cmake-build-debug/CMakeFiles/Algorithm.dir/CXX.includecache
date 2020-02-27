@@ -6,13 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.h
-
-C:/Users/Ali_Msi/CLionProjects/Algorithm/main.cpp
-iostream
--
+C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.cpp
 Algorithm.h
 C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.h
+cstddef
+-
+stdbool.h
+-
+iostream
+-
 stdio.h
 -
+
+C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.h
 
