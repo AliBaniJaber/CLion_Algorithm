@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
 
-    int  inputarray[20] = {20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1};
+    int  inputarray[20] = {20,19,18,17,3,15,14,13,12,11,10,0,8,7,6,5,4,3,2,1};
 
     int length = 20;
     Algorithm* obj = new Algorithm();
@@ -56,11 +56,15 @@ int main() {
  //   printf("Given array is \n");
  //   obj->print_array(arr, arr_size);
 
-    obj->merge_sort(inputarray, 0, length);
+   // obj->merge_sort(inputarray, 0, length-1);
 
-  //  printf("\nSorted array is \n");
-    obj->print_array(inputarray, length);
+    //printf("\nSorted array is \n");
+   // obj->print_array(inputarray, length);
 
+    //cout<<obj->binary_search(inputarray,0,20,5);
+  //  obj->print_array(inputarray,20);
+   // obj->quicksort(inputarray,1,20);
+    //obj->print_array(inputarray,20);
 
 
     return 0;
