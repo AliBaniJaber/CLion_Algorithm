@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.cpp" "C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/Algorithm.dir/Algorithm.cpp.obj"
+  "C:/Users/Ali_Msi/CLionProjects/Algorithm/LinkedList.cpp" "C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/Algorithm.dir/LinkedList.cpp.obj"
   "C:/Users/Ali_Msi/CLionProjects/Algorithm/main.cpp" "C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/Algorithm.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

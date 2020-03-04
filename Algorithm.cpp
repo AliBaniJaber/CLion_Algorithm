@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include <iostream>
 #include <stdio.h>
-// soifhsodfhgdsofhgpofdhoipfdg
+
 using namespace std;
 bool Algorithm::insertion_sort_inc(int* inputarray , int length)
 {
@@ -200,7 +200,7 @@ bool Algorithm::multplication_matrix_blok(int *input_array1, int *input_array2, 
 int count=0;
 void Algorithm::quicksort(int *inputarray, int start, int end)
 {
-    if(start < end)
+    if(start<end)
     {
         int index_pivot=parttion(inputarray,start,end);
         quicksort(inputarray,start,index_pivot-1);
@@ -347,41 +347,41 @@ void Algorithm::merge(int *inputarray, int start, int split_point, int end)
 
 
 }
-int Algorithm::binary_search(int *inputarray, int start,int end, int item)
-{
-    int split_point=(end-start)/2;
-    insertion_sort_inc(inputarray ,end-start);
-
-    if(end-start==0)
-        return -1;
-
-    else if(inputarray[split_point]==item)
-         return split_point;
-    else  if(item>inputarray[split_point])
-    {
-        binary_search(inputarray , split_point,end,item);
-
-    }
-    else  if(item<inputarray[split_point])
-    {
-        binary_search(inputarray , start,split_point,item);
-    }
-    return -1;
-
-
-
-
-
-
-
-}
+//int Algorithm::binary_search(int *inputarray, int start,int end, int item)
+//{
+//    int split_point=(end-start)/2;
+//    insertion_sort_inc(inputarray ,end-start);
+//
+//    if(end-start==0)
+//        return -1;
+//
+//    else if(inputarray[split_point]==item)
+//         return split_point;
+//    else  if(item>inputarray[split_point])
+//    {
+//        binary_search(inputarray , split_point,end,item);
+//
+//    }
+//    else  if(item<inputarray[split_point])
+//    {
+//        binary_search(inputarray , start,split_point,item);
+//    }
+//    return -1;
+//
+//
+//
+//
+//
+//
+//
+//}
 int Algorithm::parttion(int *inputdata, int start, int end)
 {
     int key=inputdata[start];
 //    int length=end-start;
 
     int i=start,j=start+1;
-    for( ;j<=end ;j++ ) {
+    for( ;j<end ;j++ ) {
         if (key >= inputdata[j])
         {
             i++;
