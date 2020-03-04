@@ -50,8 +50,8 @@ int main() {
 //    bool re=obj->print_array(inputarray,length);
 //    cout<<"hg" ;
 
-    int arr[] = {12, 11, 13, 5};
-    int arr_size = 4;
+ //   int arr[] = {12, 11, 13, 5};
+ //   int arr_size = 4;
 
  //   printf("Given array is \n");
  //   obj->print_array(arr, arr_size);
@@ -63,8 +63,10 @@ int main() {
 
     //cout<<obj->binary_search(inputarray,0,20,5);
   //  obj->print_array(inputarray,20);
-    obj->quicksort(inputarray,0,20);
-    obj->print_array(inputarray,20);
+   // obj->quicksort(inputarray,0,20);
+  //  obj->print_array(inputarray,20);
+
+
 
 
     return 0;

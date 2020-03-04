@@ -3,3 +3,18 @@
 //
 
 #include "LinkedList.h"
+struct student
+{
+    int id;
+    char* name;
+};
+
+
+LinkedList::LinkedList()
+{
+
+}
+LinkedList::~LinkedList()
+{
+
+}

@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Algorithm.dir/Algorithm.cpp.obj"
   "CMakeFiles/Algorithm.dir/LinkedList.cpp.obj"
   "CMakeFiles/Algorithm.dir/main.cpp.obj"
+  "CMakeFiles/Algorithm.dir/test.cpp.obj"
+  "CMakeFiles/Algorithm.dir/test/test.cpp.obj"
   "libAlgorithm.dll.a"
 )
 
