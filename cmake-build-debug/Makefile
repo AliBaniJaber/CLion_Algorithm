@@ -230,32 +230,32 @@ test.cpp.s:
 	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/test.cpp.s
 .PHONY : test.cpp.s
 
-test/test.obj: test/test.cpp.obj
+test/main.obj: test/main.cpp.obj
 
-.PHONY : test/test.obj
+.PHONY : test/main.obj
 
 # target to build an object file
-test/test.cpp.obj:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/test/test.cpp.obj
-.PHONY : test/test.cpp.obj
+test/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/test/main.cpp.obj
+.PHONY : test/main.cpp.obj
 
-test/test.i: test/test.cpp.i
+test/main.i: test/main.cpp.i
 
-.PHONY : test/test.i
+.PHONY : test/main.i
 
 # target to preprocess a source file
-test/test.cpp.i:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/test/test.cpp.i
-.PHONY : test/test.cpp.i
+test/main.cpp.i:
+	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/test/main.cpp.i
+.PHONY : test/main.cpp.i
 
-test/test.s: test/test.cpp.s
+test/main.s: test/main.cpp.s
 
-.PHONY : test/test.s
+.PHONY : test/main.s
 
 # target to generate assembly for a file
-test/test.cpp.s:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/test/test.cpp.s
-.PHONY : test/test.cpp.s
+test/main.cpp.s:
+	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/test/main.cpp.s
+.PHONY : test/main.cpp.s
 
 # Help Target
 help:
@@ -278,9 +278,9 @@ help:
 	@echo ... test.obj
 	@echo ... test.i
 	@echo ... test.s
-	@echo ... test/test.obj
-	@echo ... test/test.i
-	@echo ... test/test.s
+	@echo ... test/main.obj
+	@echo ... test/main.i
+	@echo ... test/main.s
 .PHONY : help
 
 

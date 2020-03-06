@@ -92,13 +92,16 @@
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/LinkedList.h">
 			<Option target="Algorithm"/>
 		</Unit>
+		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/NODE.h">
+			<Option target="Algorithm"/>
+		</Unit>
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/main.cpp">
 			<Option target="Algorithm"/>
 		</Unit>
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/test.cpp">
 			<Option target="Algorithm"/>
 		</Unit>
-		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/test/test.cpp">
+		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/test/main.cpp">
 			<Option target="Algorithm"/>
 		</Unit>
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/CMakeLists.txt">

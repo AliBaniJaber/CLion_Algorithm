@@ -1,12 +1,14 @@
 #include<iostream>
 using namespace std;
 #include"Algorithm.h";
+#include "LinkedList.h"
 #include <stdio.h>
+#include "NODE.h"
 
 
 
 int main() {
-
+/**
     int  inputarray[20] = {20,19,18,17,3,15,14,13,12,11,10,0,8,7,6,5,4,3,2,1};
 
     int length = 20;
@@ -67,7 +69,21 @@ int main() {
   //  obj->print_array(inputarray,20);
 
 
+  // student * node;
+   //node=new student;
+  // node->id=52;
+   //cout<<node->id;
 
 
     return 0;
+}
+
+ **/
+
+LinkedList *x=new LinkedList();
+
+  int out=  (new Algorithm())->power(3,13);
+  cout<<out;
+    return 0 ;
+
 }

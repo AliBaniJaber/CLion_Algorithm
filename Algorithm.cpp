@@ -347,34 +347,6 @@ void Algorithm::merge(int *inputarray, int start, int split_point, int end)
 
 
 }
-//int Algorithm::binary_search(int *inputarray, int start,int end, int item)
-//{
-//    int split_point=(end-start)/2;
-//    insertion_sort_inc(inputarray ,end-start);
-//
-//    if(end-start==0)
-//        return -1;
-//
-//    else if(inputarray[split_point]==item)
-//         return split_point;
-//    else  if(item>inputarray[split_point])
-//    {
-//        binary_search(inputarray , split_point,end,item);
-//
-//    }
-//    else  if(item<inputarray[split_point])
-//    {
-//        binary_search(inputarray , start,split_point,item);
-//    }
-//    return -1;
-//
-//
-//
-//
-//
-//
-//
-//}
 int Algorithm::parttion(int *inputdata, int start, int end)
 {
     int key=inputdata[start];
@@ -403,7 +375,19 @@ void Algorithm::swap(int *A, int *B)
     *B=tmp;
 
 }
+double Algorithm::power(int base, int po)
+{
+    if(po==1)
+        return base;
+    else{
+      if(po%2!=0)
+          return base *power(base,po/2)*power(base ,po/2);
+      else
+          return power(base, po/2)*power(base ,po/2);
 
+    }
+
+}
 
 
 

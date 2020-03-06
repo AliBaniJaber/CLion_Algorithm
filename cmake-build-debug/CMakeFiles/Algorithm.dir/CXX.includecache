@@ -6,17 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.cpp
-Algorithm.h
 C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.h
-cstddef
--
-stdbool.h
--
+
+C:/Users/Ali_Msi/CLionProjects/Algorithm/LinkedList.h
+NODE.h
+C:/Users/Ali_Msi/CLionProjects/Algorithm/NODE.h
+
+C:/Users/Ali_Msi/CLionProjects/Algorithm/NODE.h
+
+C:/Users/Ali_Msi/CLionProjects/Algorithm/main.cpp
 iostream
 -
+Algorithm.h
+C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.h
+LinkedList.h
+C:/Users/Ali_Msi/CLionProjects/Algorithm/LinkedList.h
 stdio.h
 -
-
-C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.h
+NODE.h
+C:/Users/Ali_Msi/CLionProjects/Algorithm/NODE.h
 

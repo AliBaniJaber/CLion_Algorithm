@@ -11,7 +11,7 @@ public:
     void quicksort(int* inputarray , int start , int end);
 //    void Algorithm::quicksort(int *inputarray, int start, int end)
     void merge_sort(int* inputarray ,int start , int end );
-
+    double power(int base ,int po);
     ///from git hub
 
 
