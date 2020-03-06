@@ -388,6 +388,60 @@ double Algorithm::power(int base, int po)
     }
 
 }
+int Algorithm::fibonacciNumber(int number)
+{
+    if(number<=1)
+        return number;
+    return  fibonacciNumber(number-1)+fibonacciNumber(number-2);
+}
+void Algorithm::squer_matrex1110(int *matrex)
+{
+    int local_matrex[2][2]={{1 ,1},{1,0}};
+    int rersult[2][2];
+    for(int row=0;row<2;row++)
+    {
+        for(int col=0; col<2 ;col++)
+        {
+            rersult[row][col]=0;
+            for(int k=0 ; k<2; k++)
+            {
+                rersult[row][col]=rersult[row][col]+(local_matrex[row][k]*local_matrex[k][col]);
 
+            }
+        }
+    }
 
+}
 
+void Algorithm::heapify(int *input,int index ,int size)
+{
+
+    int larg_index=index;
+    int left_index=2*index;
+    int right_index=2*index+1;
+    if(left_index<size && input[left_index]>input[larg_index])
+        larg_index=left_index;
+    if(right_index < size && input[right_index]>input[larg_index])
+        larg_index=right_index;
+    if(larg_index!=index){
+        swap(&input[index],&input[larg_index]);
+        heapify(input,larg_index,size);
+    }
+
+}
+void Algorithm::heapsort(int *inputarray, int size)
+{
+    for(int i=size/2 -1 ; i>=0 ; i--)
+    {
+        heapify(inputarray ,i,size);
+
+    }
+    for (int i=size-1; i>=0; i--)
+    {
+        // Move current root to end
+        swap(&inputarray[0], &inputarray[i]);
+
+        heapify(inputarray,0 ,i);
+    }
+
+}

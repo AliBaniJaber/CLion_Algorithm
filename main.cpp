@@ -8,12 +8,14 @@ using namespace std;
 
 
 int main() {
-/**
+
     int  inputarray[20] = {20,19,18,17,3,15,14,13,12,11,10,0,8,7,6,5,4,3,2,1};
 
     int length = 20;
     Algorithm* obj = new Algorithm();
 
+    obj->heapsort(inputarray,length);
+    obj->print_array(inputarray,length);
 //------------------------part 1 --------------------------------
 //    cout << "--------------insertion sort -------------"<<endl;
 //    cout << "befor insertion sort: "<<endl;
@@ -78,12 +80,6 @@ int main() {
     return 0;
 }
 
- **/
 
-LinkedList *x=new LinkedList();
 
-  int out=  (new Algorithm())->power(3,13);
-  cout<<out;
-    return 0 ;
 
-}
