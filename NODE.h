@@ -11,6 +11,9 @@ struct NODE
     NODE* NEXT;
     NODE* PREV;
 
+
+    //ali
+
 };
 
 
