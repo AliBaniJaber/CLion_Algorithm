@@ -412,7 +412,6 @@ void Algorithm::squer_matrex1110(int *matrex)
     }
 
 }
-
 void Algorithm::heapify(int *input,int index ,int size)
 {
 

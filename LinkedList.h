@@ -22,6 +22,7 @@ public:
     Success_or_failure deleteNode(int data);
     NODE* Search(int data);
     Success_or_failure sortLinkedList();
+    void print_list();
 
 
 
