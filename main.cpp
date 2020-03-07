@@ -79,9 +79,8 @@ int main() {
 
 
    LinkedList *XX=new LinkedList();
-   XX->addNewNode(2);
-   XX->addNewNode(3);
-   XX->addNewNode(4);
+   XX->addNewNode_withSort(2);
+
    XX->print_list();
 
     return 0;

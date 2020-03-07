@@ -18,7 +18,7 @@ public:
     Success_or_failure setHead(NODE* new_head);
     NODE* getNext(NODE* to_get_next);
     NODE* getPrev();
-    Success_or_failure addNewNode(int data);
+    Success_or_failure addNewNode_withSort(int data);
     Success_or_failure deleteNode(int data);
     NODE* Search(int data);
     Success_or_failure sortLinkedList();

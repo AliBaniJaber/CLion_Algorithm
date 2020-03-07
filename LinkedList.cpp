@@ -32,13 +32,25 @@ Success_or_failure LinkedList::setHead(NODE *new_head)
     this->head=new_head;
     return Success;
 }
-Success_or_failure LinkedList::addNewNode(int data)
+Success_or_failure LinkedList::addNewNode_withSort(int data)
 {
+    //char *name="ali";
+
     NODE* N=new NODE;
     N->ID=data;
+    //N->name=name;
     NODE *tmp=new NODE;
     N->NEXT=this->head;
     this->head=N;
+    if(this->head==NULL)
+    {
+        NODE *node=new NODE;
+        node->ID=data;
+        this->head=node;
+    }
+
+
+
     return Success;
 
 }

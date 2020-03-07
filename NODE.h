@@ -4,12 +4,14 @@
 
 #ifndef ALGORITHM_NODE_H
 #define ALGORITHM_NODE_H
+const int MAX_SIZE=20;
 
 struct NODE
 {
     int ID;
     NODE* NEXT;
     NODE* PREV;
+   // char name[MAX_SIZE];
 
 
     //ali

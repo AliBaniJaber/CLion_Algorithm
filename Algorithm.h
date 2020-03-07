@@ -17,6 +17,8 @@ public:
     //void multiply(int A[][N], int B[][N], int C[][N]);
      void heapify(int *input,int index ,int size);
      void heapsort(int *inputarray, int size);
+    void bucket_sort(int data[] , int length);
+    void bucket_sort_neg_pos();
     ///from git hub
 
 
@@ -26,5 +28,8 @@ private:
     void swap(int*A , int*B);
     void merge(int *inputarray, int start, int split_point, int end);
     void squer_matrex1110(int *Array);
+    int max(int *inputdata ,int length);
+    float number_to_divid(int data);
+
 };
 

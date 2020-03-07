@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include <iostream>
 #include <stdio.h>
-
+#include <math.h>
 using namespace std;
 bool Algorithm::insertion_sort_inc(int* inputarray , int length)
 {
@@ -442,5 +442,163 @@ void Algorithm::heapsort(int *inputarray, int size)
 
         heapify(inputarray,0 ,i);
     }
+
+}
+int Algorithm::max(int *inputdata, int length)
+{
+    int max_number=inputdata[0];
+    for(int i=0;i<length;i++)
+    {
+        if(inputdata[i]>max_number)
+            max_number=inputdata[i];
+    }
+    return max_number;
+}
+float Algorithm::number_to_divid(int data)
+{
+    int data1=data;
+    int out=1;
+    while (1)
+    {
+        if(data/10==0)
+            break;
+        out++;
+        data/=10;
+
+    }
+    int result=1;
+    for(int i=0;i<out;i++)
+    {
+        result*=10;
+    }
+
+    return result*1.0;
+}
+void Algorithm::bucket_sort(int data[] , int length)
+{
+
+    int max_num=max(data,length);
+    float num_of_digit=number_to_divid(max(data,length));
+    int bucket[10][length];
+    int index;
+    for(int i=0;i<10;i++)
+        for(int j=0;j<length;j++)
+            bucket[i][j]=-1;
+
+    for(int i=0;i<length;i++)
+    {
+        index = floor((data[i]/num_of_digit)*10);
+        for(int v=0;v<length; v++){
+            if(bucket[index][v]<0){
+                bucket[index][v]=data[i];
+                break;
+            }
+        }
+    }
+
+    for(int i =0 ;i<10 ; i++)
+    {
+        int len=0;
+        for(int k=0;1 ;k++)
+        {
+            if(bucket[i][k]==-1)
+                break;
+            else
+            {
+                len++;
+            }
+
+
+        }
+        insertion_sort_inc(bucket[i],len);
+    }
+    int flag=0;
+    for(int i =0 ;i<10 ; i++)
+    {
+        for(int k=0;k<length ;k++)
+        {
+            if(bucket[i][k]!=-1)
+            {
+                data[flag]=bucket[i][k];
+                flag++;
+            }
+        }
+    }
+
+}
+void Algorithm::bucket_sort_neg_pos()
+{
+    int length=10;
+    cin>>length;
+    int *data=new int[length];
+
+    for(int i=0;i<length;i++)
+    {
+        cin>>data[i];
+    }
+
+//    int data[]={-2,-100,-6,-40,-10,12,22,77,2,1};/*,10,50,2,3,3,77,6,666,0,1}*/;///,8,9,50,11,12,20,14,15,16,17,18,19,20};
+
+    int size_pos=0;
+    int size_neg=0;
+    for(int i=0;i<length;i++)
+    {
+        if(data[i]>=0)
+            size_pos++;
+        else
+            size_neg++;
+    }
+    int *neg_data;
+    int *pos_data;
+    if(size_neg!=0)
+        neg_data=new int[size_neg];
+    if(size_pos!=0)
+        pos_data=new int[size_pos];
+
+
+    int i_pos=0;
+    int i_neg=0;
+    for(int i=0;i<length;i++)
+    {
+        if(data[i]>=0)
+        {
+            pos_data[i_pos]=data[i];
+            i_pos++;
+        }
+        else
+        {
+            neg_data[i_neg]=-1*data[i];
+            i_neg++;
+        }
+    }
+    if(size_pos!=0)
+        bucket_sort(pos_data,size_pos);
+    if(size_neg!=0)
+        bucket_sort(neg_data,size_neg);
+
+    int t=0;
+    if(size_neg!=0)
+        for(int i=size_neg-1;i>=0;i--)
+        {
+            data[t]=-1*neg_data[i];
+            t++;
+        }
+    int k=0;
+    if(size_pos!=0)
+        for(int i=0;i<size_pos;i++)
+        {
+            data[t]=pos_data[i];
+            t++;
+        }
+
+    int *res=new int[length];
+    for(int k1=0;k1<length ;k1++) {
+        res[k1]=data[k1];
+    }
+    for(int u=0;u<length;u++)
+    {
+        cout<<res[u];
+    }
+
 
 }
