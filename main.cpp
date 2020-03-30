@@ -99,6 +99,7 @@ while (1)
     cout<<"7_print data"<<endl;
     cout<<"8_end;"<<endl;
     cout<<"9_index of "<<endl;
+
     cin>>status;
    if(status==8){
        break;}

@@ -4,11 +4,15 @@
 CMakeFiles/Algorithm.dir/Algorithm.cpp.obj: ../Algorithm.cpp
 CMakeFiles/Algorithm.dir/Algorithm.cpp.obj: ../Algorithm.h
 
+CMakeFiles/Algorithm.dir/Heap.cpp.obj: ../Heap.cpp
+CMakeFiles/Algorithm.dir/Heap.cpp.obj: ../Heap.h
+
 CMakeFiles/Algorithm.dir/LinkedList.cpp.obj: ../LinkedList.cpp
 CMakeFiles/Algorithm.dir/LinkedList.cpp.obj: ../LinkedList.h
 CMakeFiles/Algorithm.dir/LinkedList.cpp.obj: ../NODE.h
 
 CMakeFiles/Algorithm.dir/main.cpp.obj: ../Algorithm.h
+CMakeFiles/Algorithm.dir/main.cpp.obj: ../Heap.h
 CMakeFiles/Algorithm.dir/main.cpp.obj: ../LinkedList.h
 CMakeFiles/Algorithm.dir/main.cpp.obj: ../NODE.h
 CMakeFiles/Algorithm.dir/main.cpp.obj: ../main.cpp
