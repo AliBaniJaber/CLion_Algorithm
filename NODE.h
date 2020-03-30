@@ -11,10 +11,7 @@ struct NODE
     int ID;
     NODE* NEXT;
     NODE* PREV;
-   // char name[MAX_SIZE];
 
-
-    //ali
 
 };
 

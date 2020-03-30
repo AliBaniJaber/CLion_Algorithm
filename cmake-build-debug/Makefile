@@ -149,6 +149,33 @@ Algorithm.cpp.s:
 	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/Algorithm.cpp.s
 .PHONY : Algorithm.cpp.s
 
+Heap.obj: Heap.cpp.obj
+
+.PHONY : Heap.obj
+
+# target to build an object file
+Heap.cpp.obj:
+	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/Heap.cpp.obj
+.PHONY : Heap.cpp.obj
+
+Heap.i: Heap.cpp.i
+
+.PHONY : Heap.i
+
+# target to preprocess a source file
+Heap.cpp.i:
+	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/Heap.cpp.i
+.PHONY : Heap.cpp.i
+
+Heap.s: Heap.cpp.s
+
+.PHONY : Heap.s
+
+# target to generate assembly for a file
+Heap.cpp.s:
+	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/Heap.cpp.s
+.PHONY : Heap.cpp.s
+
 LinkedList.obj: LinkedList.cpp.obj
 
 .PHONY : LinkedList.obj
@@ -269,6 +296,9 @@ help:
 	@echo ... Algorithm.obj
 	@echo ... Algorithm.i
 	@echo ... Algorithm.s
+	@echo ... Heap.obj
+	@echo ... Heap.i
+	@echo ... Heap.s
 	@echo ... LinkedList.obj
 	@echo ... LinkedList.i
 	@echo ... LinkedList.s

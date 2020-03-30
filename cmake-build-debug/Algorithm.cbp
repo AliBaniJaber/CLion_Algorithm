@@ -86,6 +86,12 @@
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.h">
 			<Option target="Algorithm"/>
 		</Unit>
+		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/Heap.cpp">
+			<Option target="Algorithm"/>
+		</Unit>
+		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/Heap.h">
+			<Option target="Algorithm"/>
+		</Unit>
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/LinkedList.cpp">
 			<Option target="Algorithm"/>
 		</Unit>
