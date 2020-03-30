@@ -20,7 +20,7 @@ public:
     int size();
     void Expand();
     void addElment(int item );
-    void deletElemant(int item );
+    void deletElemant(int index );
     void print_data();
     int numberOfFreeSlot();
     int indexOf(int item);

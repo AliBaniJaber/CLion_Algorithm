@@ -64,11 +64,21 @@ int Heap::size()
 }
 int Heap::indexOf(int item)
 {
-   for(int i ; i<this->capict ;i++)
+   for(int i=0 ; i<this->capict ;i++)
    {
-       if(this->Storage[i]==i)
+       if(this->Storage[i]==item)
            return i;
    }
    return -1;
 
+}
+void Heap::deletElemant(int index)
+{
+    int elemant =this->Storage[index];
+
+    for(int i=index;i<this->capict;i++)
+    {
+        this->Storage[i]=this->Storage[i+1];
+    }
+    cout<<"delete  "<<elemant<<" completed "<<endl <<endl;
 }

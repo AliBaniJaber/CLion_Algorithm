@@ -125,7 +125,10 @@ while (1)
        int item;
        cout<<"enter item :";
        cin>>item;
-       obj->addElment(item);
+       int index=obj->indexOf(item);
+       obj->deletElemant(index);
+
+
    }
    else if(status==2)
    {
