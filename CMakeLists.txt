@@ -3,4 +3,5 @@ project(Algorithm)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Algorithm main.cpp Algorithm.cpp Algorithm.h LinkedList.cpp LinkedList.h test.cpp test/main.cpp NODE.h Heap.cpp Heap.h)
+add_executable(Algorithm.cpp Algorithm.h LinkedList.cpp LinkedList.h test.cpp test/main.cpp NODE.h Heap.cpp Heap.h main.cpp stack/main.cpp)
+

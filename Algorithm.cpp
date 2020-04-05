@@ -1,10 +1,12 @@
 #include "Algorithm.h"
 #include <cstddef>
+
 #include <stdbool.h>
 #include <iostream>
 #include <stdio.h>
 #include <math.h>
 using namespace std;
+
 bool Algorithm::insertion_sort_inc(int* inputarray , int length)
 {
     // ----------information about function -----------------

@@ -25,6 +25,12 @@ public:
     int numberOfFreeSlot();
     int indexOf(int item);
 
+    void Heapify(int index);
+    int left(int index);
+    int right(int index);
+
+private:
+    void swap(int *A ,int *B);
 
 
 };

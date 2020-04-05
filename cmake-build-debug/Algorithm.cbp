@@ -17,29 +17,18 @@
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Algorithm">
-				<Option output="C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Algorithm.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="rebuild_cache">
 				<Option working_dir="C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Algorithm"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
 					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Algorithm/fast">
-				<Option output="C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Algorithm.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="Algorithm.cpp">
+				<Option output="C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Algorithm.cpp.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -53,7 +42,28 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Algorithm/fast"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Algorithm.cpp"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Algorithm.cpp/fast">
+				<Option output="C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Algorithm.cpp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Algorithm.cpp/fast"/>
 					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -69,46 +79,36 @@
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ali_Msi/CLionProjects/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 		</Build>
-		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.cpp">
-			<Option target="Algorithm"/>
-		</Unit>
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.h">
-			<Option target="Algorithm"/>
+			<Option target="Algorithm.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/Heap.cpp">
-			<Option target="Algorithm"/>
+			<Option target="Algorithm.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/Heap.h">
-			<Option target="Algorithm"/>
+			<Option target="Algorithm.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/LinkedList.cpp">
-			<Option target="Algorithm"/>
+			<Option target="Algorithm.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/LinkedList.h">
-			<Option target="Algorithm"/>
+			<Option target="Algorithm.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/NODE.h">
-			<Option target="Algorithm"/>
+			<Option target="Algorithm.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/main.cpp">
-			<Option target="Algorithm"/>
+			<Option target="Algorithm.cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/stack/main.cpp">
+			<Option target="Algorithm.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/test.cpp">
-			<Option target="Algorithm"/>
+			<Option target="Algorithm.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/test/main.cpp">
-			<Option target="Algorithm"/>
+			<Option target="Algorithm.cpp"/>
 		</Unit>
 		<Unit filename="C:/Users/Ali_Msi/CLionProjects/Algorithm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

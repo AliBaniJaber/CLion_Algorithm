@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = C:\Users\Ali_Msi\CLionProjects\Algorithm\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLionA 2019.3.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -76,6 +65,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLionA 2019.3.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,44 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Algorithm
+# Target rules for targets named Algorithm.cpp
 
 # Build rule for target.
-Algorithm: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Algorithm
-.PHONY : Algorithm
+Algorithm.cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Algorithm.cpp
+.PHONY : Algorithm.cpp
 
 # fast build rule for target.
-Algorithm/fast:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/build
-.PHONY : Algorithm/fast
-
-Algorithm.obj: Algorithm.cpp.obj
-
-.PHONY : Algorithm.obj
-
-# target to build an object file
-Algorithm.cpp.obj:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/Algorithm.cpp.obj
-.PHONY : Algorithm.cpp.obj
-
-Algorithm.i: Algorithm.cpp.i
-
-.PHONY : Algorithm.i
-
-# target to preprocess a source file
-Algorithm.cpp.i:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/Algorithm.cpp.i
-.PHONY : Algorithm.cpp.i
-
-Algorithm.s: Algorithm.cpp.s
-
-.PHONY : Algorithm.s
-
-# target to generate assembly for a file
-Algorithm.cpp.s:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/Algorithm.cpp.s
-.PHONY : Algorithm.cpp.s
+Algorithm.cpp/fast:
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/build
+.PHONY : Algorithm.cpp/fast
 
 Heap.obj: Heap.cpp.obj
 
@@ -155,7 +128,7 @@ Heap.obj: Heap.cpp.obj
 
 # target to build an object file
 Heap.cpp.obj:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/Heap.cpp.obj
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/Heap.cpp.obj
 .PHONY : Heap.cpp.obj
 
 Heap.i: Heap.cpp.i
@@ -164,7 +137,7 @@ Heap.i: Heap.cpp.i
 
 # target to preprocess a source file
 Heap.cpp.i:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/Heap.cpp.i
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/Heap.cpp.i
 .PHONY : Heap.cpp.i
 
 Heap.s: Heap.cpp.s
@@ -173,7 +146,7 @@ Heap.s: Heap.cpp.s
 
 # target to generate assembly for a file
 Heap.cpp.s:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/Heap.cpp.s
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/Heap.cpp.s
 .PHONY : Heap.cpp.s
 
 LinkedList.obj: LinkedList.cpp.obj
@@ -182,7 +155,7 @@ LinkedList.obj: LinkedList.cpp.obj
 
 # target to build an object file
 LinkedList.cpp.obj:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/LinkedList.cpp.obj
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/LinkedList.cpp.obj
 .PHONY : LinkedList.cpp.obj
 
 LinkedList.i: LinkedList.cpp.i
@@ -191,7 +164,7 @@ LinkedList.i: LinkedList.cpp.i
 
 # target to preprocess a source file
 LinkedList.cpp.i:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/LinkedList.cpp.i
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/LinkedList.cpp.i
 .PHONY : LinkedList.cpp.i
 
 LinkedList.s: LinkedList.cpp.s
@@ -200,7 +173,7 @@ LinkedList.s: LinkedList.cpp.s
 
 # target to generate assembly for a file
 LinkedList.cpp.s:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/LinkedList.cpp.s
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/LinkedList.cpp.s
 .PHONY : LinkedList.cpp.s
 
 main.obj: main.cpp.obj
@@ -209,7 +182,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -218,7 +191,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -227,8 +200,35 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+stack/main.obj: stack/main.cpp.obj
+
+.PHONY : stack/main.obj
+
+# target to build an object file
+stack/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/stack/main.cpp.obj
+.PHONY : stack/main.cpp.obj
+
+stack/main.i: stack/main.cpp.i
+
+.PHONY : stack/main.i
+
+# target to preprocess a source file
+stack/main.cpp.i:
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/stack/main.cpp.i
+.PHONY : stack/main.cpp.i
+
+stack/main.s: stack/main.cpp.s
+
+.PHONY : stack/main.s
+
+# target to generate assembly for a file
+stack/main.cpp.s:
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/stack/main.cpp.s
+.PHONY : stack/main.cpp.s
 
 test.obj: test.cpp.obj
 
@@ -236,7 +236,7 @@ test.obj: test.cpp.obj
 
 # target to build an object file
 test.cpp.obj:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/test.cpp.obj
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/test.cpp.obj
 .PHONY : test.cpp.obj
 
 test.i: test.cpp.i
@@ -245,7 +245,7 @@ test.i: test.cpp.i
 
 # target to preprocess a source file
 test.cpp.i:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/test.cpp.i
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/test.cpp.i
 .PHONY : test.cpp.i
 
 test.s: test.cpp.s
@@ -254,7 +254,7 @@ test.s: test.cpp.s
 
 # target to generate assembly for a file
 test.cpp.s:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/test.cpp.s
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/test.cpp.s
 .PHONY : test.cpp.s
 
 test/main.obj: test/main.cpp.obj
@@ -263,7 +263,7 @@ test/main.obj: test/main.cpp.obj
 
 # target to build an object file
 test/main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/test/main.cpp.obj
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/test/main.cpp.obj
 .PHONY : test/main.cpp.obj
 
 test/main.i: test/main.cpp.i
@@ -272,7 +272,7 @@ test/main.i: test/main.cpp.i
 
 # target to preprocess a source file
 test/main.cpp.i:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/test/main.cpp.i
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/test/main.cpp.i
 .PHONY : test/main.cpp.i
 
 test/main.s: test/main.cpp.s
@@ -281,7 +281,7 @@ test/main.s: test/main.cpp.s
 
 # target to generate assembly for a file
 test/main.cpp.s:
-	$(MAKE) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/test/main.cpp.s
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/test/main.cpp.s
 .PHONY : test/main.cpp.s
 
 # Help Target
@@ -290,12 +290,9 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... Algorithm
-	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Algorithm.obj
-	@echo ... Algorithm.i
-	@echo ... Algorithm.s
+	@echo ... Algorithm.cpp
+	@echo ... edit_cache
 	@echo ... Heap.obj
 	@echo ... Heap.i
 	@echo ... Heap.s
@@ -305,6 +302,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... stack/main.obj
+	@echo ... stack/main.i
+	@echo ... stack/main.s
 	@echo ... test.obj
 	@echo ... test.i
 	@echo ... test.s

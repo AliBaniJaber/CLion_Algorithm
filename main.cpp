@@ -5,10 +5,55 @@ using namespace std;
 #include "Heap.h"
 #include <stdio.h>
 #include "NODE.h"
-
-
-
+#include <stdio.h>
+#include <xmmintrin.h>
+#include <bits/stdc++.h>
 int main() {
+    queue <int>queue1;
+
+
+    stack <int> stc;//=new <int>stack();
+    stc.push(0);
+    stc.push(1);
+    stc.push(2);
+    stc.push(3);
+    stc.push(4);
+    stc.push(5);
+    stc.push(6);
+    stc.push(7);
+    stc.push(8);
+    stc.push(9);
+    stc.push(10);
+    int size=stc.size();
+    stack <int>secand;
+    for(int i=0;i<size;i++)
+    {
+        cout<<stc.top()<<"  ";
+        secand.push(stc.top());
+        stc.pop();
+
+    }
+    cout<<endl;
+
+    for(int i=0;i<size;i++)
+    {
+        cout<<secand.top()<<"";
+        secand.pop();
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //    int  inputarray[20] = {20,19,18,17,3,15,14,13,12,11,10,0,8,7,6,5,4,3,2,1};
 //
@@ -84,77 +129,81 @@ int main() {
 //
 //   XX->print_list();
 
-Heap *obj=new Heap();
+    Heap *obj=new Heap();
+//--------------------------------------------------------
+//
+//while (1)
+//{
+//    int status;
+//    cout<<"1_add new data  "<<endl;
+//    cout<<"2_isFill?"<<endl;
+//    cout<<"3_delet  data"<<endl;
+//    cout<<"4_Number of free Sloat"<<endl;
+//    cout<<"5_size?"<<endl;
+//    cout<<"6_number of exist data"<<endl;
+//    cout<<"7_print data"<<endl;
+//    cout<<"8_end;"<<endl;
+//    cout<<"9_index of "<<endl;
+//
+//    cin>>status;
+//   if(status==8){
+//       break;}
+//   else if(status==7)
+//   {
+//       obj->print_data();
+//   }
+//   else if(status==6)
+//   {
+//       cout<<" number of elemant :"<<obj->capict<<endl<<endl;
+//   }
+//   else if(status==5)
+//   {
+//       cout<<" Size :"<<obj->size()<<endl<<endl;
+//   }
+//   else if(status==4)
+//   {
+//       cout<<"Number of free Sloat :"<<obj->numberOfFreeSlot()<<endl<<endl;
+//   }
+//   else if(status==3)
+//   {
+//       //edit to delet
+//       int item;
+//       cout<<"enter item :";
+//       cin>>item;
+//       int index=obj->indexOf(item);
+//       obj->deletElemant(index);
+//
+//
+//   }
+//   else if(status==2)
+//   {
+//      cout<<" the Storage is : "<<obj->isFill()<<endl;
+//   }
+//   else if(status==1)
+//   {
+//       int item;
+//       cout<<"enter item :";
+//       cin>>item;
+//       obj->addElment(item);
+//   }
+//   else if(status==9)
+//   {
+//       int item ;
+//       cout<<" Enter the Item :";
+//       cin>>item;
+//       int res=obj->indexOf(item);
+//       if(res==-1)
+//           cout << "the item not fount "<<endl<<endl;
+//       else cout<<" the index of "<<item <<" is :"<<res<<endl<<endl;
+//
+//
+//   }
+//cout<<endl<<endl;
+//}
 
 
-while (1)
-{
-    int status;
-    cout<<"1_add new data  "<<endl;
-    cout<<"2_isFill?"<<endl;
-    cout<<"3_delet  data"<<endl;
-    cout<<"4_Number of free Sloat"<<endl;
-    cout<<"5_size?"<<endl;
-    cout<<"6_number of exist data"<<endl;
-    cout<<"7_print data"<<endl;
-    cout<<"8_end;"<<endl;
-    cout<<"9_index of "<<endl;
-
-    cin>>status;
-   if(status==8){
-       break;}
-   else if(status==7)
-   {
-       obj->print_data();
-   }
-   else if(status==6)
-   {
-       cout<<" number of elemant :"<<obj->capict<<endl<<endl;
-   }
-   else if(status==5)
-   {
-       cout<<" Size :"<<obj->size()<<endl<<endl;
-   }
-   else if(status==4)
-   {
-       cout<<"Number of free Sloat :"<<obj->numberOfFreeSlot()<<endl<<endl;
-   }
-   else if(status==3)
-   {
-       //edit to delet
-       int item;
-       cout<<"enter item :";
-       cin>>item;
-       int index=obj->indexOf(item);
-       obj->deletElemant(index);
 
 
-   }
-   else if(status==2)
-   {
-      cout<<" the Storage is : "<<obj->isFill()<<endl;
-   }
-   else if(status==1)
-   {
-       int item;
-       cout<<"enter item :";
-       cin>>item;
-       obj->addElment(item);
-   }
-   else if(status==9)
-   {
-       int item ;
-       cout<<" Enter the Item :";
-       cin>>item;
-       int res=obj->indexOf(item);
-       if(res==-1)
-           cout << "the item not fount "<<endl<<endl;
-       else cout<<" the index of "<<item <<" is :"<<res<<endl<<endl;
-
-
-   }
-cout<<endl<<endl;
-}
 
 
     return 0;

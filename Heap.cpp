@@ -82,3 +82,30 @@ void Heap::deletElemant(int index)
     }
     cout<<"delete  "<<elemant<<" completed "<<endl <<endl;
 }
+void Heap::Heapify(int index)
+{
+    int L=this->left(index);
+    int R=this->right(index);
+
+
+
+
+
+}
+
+int Heap::left(int index)
+{
+    return this->Storage[index*2];
+
+}
+int Heap::right(int index)
+{
+    return this->Storage[index*2+1];
+
+}
+void Heap::swap(int *A, int *B)
+{
+    int tmp =*A;
+    *A=*B;
+    *B=tmp;
+}

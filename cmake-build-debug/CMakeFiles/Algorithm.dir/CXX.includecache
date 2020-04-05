@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.h
+
 C:/Users/Ali_Msi/CLionProjects/Algorithm/Heap.cpp
 Heap.h
 C:/Users/Ali_Msi/CLionProjects/Algorithm/Heap.h
@@ -13,4 +15,24 @@ iostream
 -
 
 C:/Users/Ali_Msi/CLionProjects/Algorithm/Heap.h
+
+C:/Users/Ali_Msi/CLionProjects/Algorithm/LinkedList.h
+NODE.h
+C:/Users/Ali_Msi/CLionProjects/Algorithm/NODE.h
+
+C:/Users/Ali_Msi/CLionProjects/Algorithm/NODE.h
+
+C:/Users/Ali_Msi/CLionProjects/Algorithm/main.cpp
+iostream
+-
+Algorithm.h
+C:/Users/Ali_Msi/CLionProjects/Algorithm/Algorithm.h
+LinkedList.h
+C:/Users/Ali_Msi/CLionProjects/Algorithm/LinkedList.h
+Heap.h
+C:/Users/Ali_Msi/CLionProjects/Algorithm/Heap.h
+stdio.h
+-
+NODE.h
+C:/Users/Ali_Msi/CLionProjects/Algorithm/NODE.h
 
