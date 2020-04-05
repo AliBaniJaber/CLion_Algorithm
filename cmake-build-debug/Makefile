@@ -176,6 +176,33 @@ LinkedList.cpp.s:
 	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/LinkedList.cpp.s
 .PHONY : LinkedList.cpp.s
 
+Tree.obj: Tree.cpp.obj
+
+.PHONY : Tree.obj
+
+# target to build an object file
+Tree.cpp.obj:
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/Tree.cpp.obj
+.PHONY : Tree.cpp.obj
+
+Tree.i: Tree.cpp.i
+
+.PHONY : Tree.i
+
+# target to preprocess a source file
+Tree.cpp.i:
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/Tree.cpp.i
+.PHONY : Tree.cpp.i
+
+Tree.s: Tree.cpp.s
+
+.PHONY : Tree.s
+
+# target to generate assembly for a file
+Tree.cpp.s:
+	$(MAKE) -f CMakeFiles\Algorithm.cpp.dir\build.make CMakeFiles/Algorithm.cpp.dir/Tree.cpp.s
+.PHONY : Tree.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -299,6 +326,9 @@ help:
 	@echo ... LinkedList.obj
 	@echo ... LinkedList.i
 	@echo ... LinkedList.s
+	@echo ... Tree.obj
+	@echo ... Tree.i
+	@echo ... Tree.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

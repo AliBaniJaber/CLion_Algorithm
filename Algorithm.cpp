@@ -199,7 +199,7 @@ bool Algorithm::multplication_matrix_blok(int *input_array1, int *input_array2, 
     return true;
 
 }
-int count=0;
+
 void Algorithm::quicksort(int *inputarray, int start, int end)
 {
     if(start<end)

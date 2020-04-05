@@ -8,6 +8,7 @@ using namespace std;
 #include <stdio.h>
 #include <xmmintrin.h>
 #include <bits/stdc++.h>
+#include "Tree.h"
 int main() {
     queue <int>queue1;
 
@@ -28,20 +29,37 @@ int main() {
     stack <int>secand;
     for(int i=0;i<size;i++)
     {
-        cout<<stc.top()<<"  ";
+      //  cout<<stc.top()<<"  ";
         secand.push(stc.top());
         stc.pop();
 
     }
-    cout<<endl;
+    //cout<<endl;
 
     for(int i=0;i<size;i++)
     {
-        cout<<secand.top()<<"";
+       // cout<<secand.top()<<"";
         secand.pop();
 
     }
 
+
+    Node *root=new Node();
+    root->key=100;
+    Tree *tr=new Tree();
+    tr->add_To_Tree(root,12);
+    tr->add_To_Tree(root,100);
+    tr->add_To_Tree(root,-6);
+    tr->add_To_Tree(root,432);
+    tr->add_To_Tree(root,11);
+    tr->add_To_Tree(root,0);
+    tr->add_To_Tree(root,76);
+    tr->add_To_Tree(root,200);
+    tr->inOrder(root);
+    cout<<endl;
+   bool result= tr->search(root,3645);
+   if(!result)
+       cout<<"not found the node"<<endl;
 
 
 
